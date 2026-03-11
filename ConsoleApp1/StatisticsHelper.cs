@@ -2,7 +2,7 @@
 
 public class StatisticsHelper
 {
-    public static double CalculateAverage(double[] array)
+    public static double CalculateAverage(int[] array)
     {
         return array.Average();
     }
