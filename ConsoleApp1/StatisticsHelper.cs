@@ -31,6 +31,14 @@ public class StatisticsHelper
 
     public static int CalculateMin(int[] array)
     {
-        return array.Min();
+        int min = int.MaxValue;
+        for (int i = array.Length - 1; i >= 0; i--)
+        {
+            if (array[i] < min)
+            {
+                min = array[i];
+            }
+        }
+        return min;
     }
 }
