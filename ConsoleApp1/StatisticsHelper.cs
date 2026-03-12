@@ -15,4 +15,17 @@ public class StatisticsHelper
         }
         return sum / array.Length;
     }
+
+    public static int CalculateMax(int[] array)
+    {
+        int max = int.MinValue;
+        for (int i = array.Length - 1; i >= 0; i--)
+        {
+            if (array[i] > max)
+            {
+                max = array[i];
+            }
+        }
+        return max;
+    }
 }
