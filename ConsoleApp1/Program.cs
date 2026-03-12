@@ -2,6 +2,15 @@
 
 Console.WriteLine("Input numbers: ");
 string input = Console.ReadLine();
-int[] numbers = input.Split(' ').Select(int.Parse).ToArray();
-double average = StatisticsHelper.CalculateAverage(numbers);
-Console.WriteLine($"Average: {average}");
+try
+{
+    int[] numbers = input.Split(' ').Select(int.Parse).ToArray();
+    double average = StatisticsHelper.CalculateAverage(numbers);
+    Console.WriteLine($"Average: {average}");
+}
+catch (FormatException)
+{
+    Console.WriteLine("Error, please try again");
+    
+}
+
