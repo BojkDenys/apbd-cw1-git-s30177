@@ -31,6 +31,7 @@ public class StatisticsHelper
 
     public static int CalculateMin(int[] array)
     {
-        return array.Min();
+        int min = array.Min();
+        return min;
     }
 }
