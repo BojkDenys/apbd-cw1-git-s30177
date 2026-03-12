@@ -28,4 +28,9 @@ public class StatisticsHelper
         }
         return max;
     }
+
+    public static int CalculateMin(int[] array)
+    {
+        return 0;
+    }
 }
